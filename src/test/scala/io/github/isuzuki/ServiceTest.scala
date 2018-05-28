@@ -9,5 +9,11 @@ class ServiceTest extends WordSpec with Matchers {
         Service.hello shouldBe "hello"
       }
     }
+
+    "sum" should {
+      "return added value" in {
+        Service.sum(1, 2) shouldBe 3
+      }
+    }
   }
 }
